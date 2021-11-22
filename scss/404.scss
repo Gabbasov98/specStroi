@@ -1,0 +1,103 @@
+.error404 {
+    padding: 70px 0;
+    &__inner {
+        display: flex;
+    }
+    &__img {
+        width: 308px;
+        flex-shrink: 0;
+        margin-right: 71px;
+        img {
+            width: 100%;
+        }
+    }
+    &__content {
+        width: 560px;
+    }
+    &__num {
+        font-size: 110px;
+        line-height: 65%;
+        font-weight: 900;
+        color: #efc701;
+        &-title {
+            font-size: 30px;
+            font-weight: 900;
+            color: #efc701;
+            margin-top: 4px;
+        }
+    }
+    &__title {
+        font-size: 30px;
+        font-weight: 700;
+        color: #262626;
+        margin-top: 21px;
+    }
+    &__desc {
+        margin-top: 24px;
+        border-top: 1px solid #eaeaea;
+        padding-top: 21px;
+        p {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 400;
+            color: #1d1d1d;
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    &__link {
+        margin-top: 25px;
+        width: 211px;
+        height: 50px;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.02em;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .error404 {
+        padding: 30px 0;
+        &__inner {
+            display: block;
+            position: relative;
+        }
+        &__content {
+            width: 100%;
+        }
+        &__img {
+            width: 130px;
+        }
+        &__mob {
+            position: absolute;
+            left: 158px;
+            top: 20px;
+        }
+        &__num {
+            font-size: 52.3px;
+            &-title {
+                font-size: 18px;
+            }
+        }
+        &__title {
+            font-size: 16px;
+            line-height: 22px;
+            margin-top: 17px;
+        }
+        &__desc {
+            padding-top: 26px;
+            p {
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+        &__link {
+            width: 163px;
+            height: 39px;
+            font-size: 10px;
+            margin-top: 18px;
+        }
+    }
+}

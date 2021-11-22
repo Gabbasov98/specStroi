@@ -1,0 +1,326 @@
+.contacts {
+    padding: 40px 0 45px;
+    &__inner {
+        display: flex;
+    }
+    &__sidebar {
+        border: 3px solid #f3f3f3;
+        width: 380px;
+        flex-shrink: 0;
+        padding: 30px 45px;
+        &-title {
+            font-size: 12px;
+            font-weight: 500;
+            color: #989898;
+            margin-bottom: 12px;
+        }
+        &-btn {
+            width: 245px;
+            height: 51px;
+            margin-top: 20px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+    }
+    &__address {
+        display: flex;
+        color: #1d1d1d;
+        svg {
+            margin-right: 17px;
+            width: 8px;
+            height: 13px;
+        }
+        strong {
+            font-size: 15px;
+            font-weight: 500;
+            display: block;
+        }
+        span {
+            font-size: 12px;
+            line-height: 16px;
+            margin-top: 10px;
+            display: block;
+        }
+    }
+    &__google {
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        color: #2490b8;
+        &:hover {
+            color: #1f5d91;
+        }
+        span {
+            margin-top: 0;
+        }
+        img {
+            margin-left: 9px;
+        }
+    }
+    &__phones {
+        display: flex;
+        svg {
+            margin-right: 15px;
+        }
+        &-block {
+            margin-top: 29px;
+        }
+    }
+    &__phone {
+        font-size: 18px;
+        font-weight: 600;
+        color: #1d1d1d;
+        display: block;
+        margin-bottom: 11px;
+        &:hover {
+            color: #efc701;
+        }
+    }
+    &__whatsapp {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        font-weight: 500;
+        color: #1d1d1d;
+        margin-top: 15px;
+        &:hover {
+            color: #efc701;
+            path {
+                fill: #efc701;
+            }
+        }
+        svg {
+            margin-right: 9px;
+        }
+    }
+    &__mail,
+    &__instagram {
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        font-weight: 500;
+        color: #1d1d1d;
+        &:hover {
+            color: #efc701;
+            path {
+                fill: #efc701;
+            }
+        }
+        svg {
+            margin-right: 15px;
+        }
+        &-block {
+            margin-top: 29px;
+        }
+    }
+    &__instagram {
+        font-size: 16px;
+        svg {
+            margin-right: 14px;
+        }
+        &-block {
+            margin-top: 25px;
+        }
+    }
+    &__content {
+        flex-grow: 1;
+        margin-left: 80px;
+    }
+    &__title {
+        font-size: 30px;
+        font-weight: 700;
+        color: #242424;
+        padding-bottom: 28px;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            width: 93px;
+            height: 2px;
+            background-image: linear-gradient(90.0deg, #dd4a8b 0%, #279ed0 100%);
+            left: 0;
+            bottom: 0;
+        }
+    }
+    &__form {
+        margin-top: 33px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 17px 21px;
+        &-group {
+            &:nth-child(5) {
+                grid-column: 1/3;
+            }
+        }
+        &-nav {
+            grid-column: 1/3;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+        }
+        &-btn {
+            width: 277px;
+            height: 55px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        &-hint {
+            font-size: 10px;
+            line-height: 14px;
+            font-weight: 400;
+            color: #636363;
+            margin-left: 40px;
+            a {
+                color: #3199cc;
+            }
+        }
+        input {
+            height: 47px;
+            width: 100%;
+            background-color: #ffffff;
+            border: 1px solid #d8d8d8;
+            border-radius: 2px;
+            padding: 0 24px;
+            &::placeholder {
+                color: #9c9c9c;
+            }
+        }
+        textarea {
+            height: 157px;
+            width: 100%;
+            background-color: #ffffff;
+            border: 1px solid #d8d8d8;
+            border-radius: 2px;
+            padding: 17px 24px;
+            resize: none;
+            &::placeholder {
+                color: #9c9c9c;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .contacts {
+        &__sidebar {
+            padding: 20px 24px;
+            width: 320px;
+        }
+        &__content {
+            margin-left: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .contacts {
+        padding: 15px 0 35px;
+        &__inner {
+            display: block;
+        }
+        &__sidebar {
+            width: 100%;
+        }
+        &__content {
+            margin-left: 0px;
+            margin-top: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contacts {
+        &__sidebar {
+            &-title {
+                font-size: 10px;
+            }
+            &-btn {
+                width: 242px;
+                height: 50px;
+            }
+        }
+        &__address {
+            strong {
+                font-size: 14px;
+            }
+            span {
+                font-size: 10px;
+                line-height: 14px;
+                margin-top: 10px;
+            }
+        }
+        &__google {
+            font-size: 12px !important;
+            margin-top: 12px;
+            span {
+                margin-top: 0;
+            }
+        }
+        &__phones {
+            svg {
+                margin-right: 13px;
+            }
+            &-block {
+                margin-top: 25px;
+            }
+        }
+        &__phone {
+            font-size: 16px;
+        }
+        &__mail {
+            svg {
+                margin-right: 13px;
+            }
+            &-block {
+                margin-top: 21px;
+            }
+        }
+        &__instagram {
+            font-size: 14px;
+            &-block {
+                margin-top: 21px;
+            }
+        }
+        &__title {
+            padding-bottom: 20px;
+            font-size: 20px;
+            &:before {
+                height: 1px;
+            }
+        }
+        &__form {
+            margin-top: 20px;
+            display: block;
+            &-group {
+                margin-bottom: 11px;
+            }
+            &-nav {
+                display: block;
+                margin-top: 18px;
+            }
+            &-btn {
+                width: 239px;
+                height: 45px;
+                font-size: 14px;
+            }
+            &-hint {
+                font-size: 8px;
+                line-height: 12px;
+                margin-left: 0;
+                margin-top: 15px;
+                br {
+                    display: none;
+                }
+            }
+            input {
+                height: 38px;
+                padding: 0 16px;
+            }
+            textarea {
+                height: 132px;
+                padding: 14px 16px;
+            }
+        }
+    }
+}

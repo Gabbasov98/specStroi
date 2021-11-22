@@ -1,0 +1,87 @@
+.service-item {
+  padding: 30px 0 50px; }
+  .service-item p {
+    line-height: 22px; }
+
+.service {
+  padding: 40px 0 65px; }
+  .service__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px; }
+  .service__item {
+    border: 5px solid #f3f3f3;
+    padding: 45px 50px;
+    display: flex;
+    transition: all .3s;
+    position: relative; }
+    .service__item:hover {
+      border-color: #009cd5; }
+      .service__item:hover .service__item-title {
+        color: #009cd5; }
+    .service__item-btn {
+      width: 36px;
+      height: 36px;
+      background-color: #009cd5;
+      position: absolute;
+      top: 45px;
+      right: 45px; }
+    .service__item-icon {
+      width: 85px;
+      margin-right: 35px;
+      flex-shrink: 0; }
+    .service__item-title {
+      font-size: 22px;
+      line-height: 28px;
+      font-weight: 600;
+      color: #1e1e1e;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      padding-right: 40px; }
+    .service__item-desc {
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 400;
+      color: #1e1e1e;
+      margin-top: 15px; }
+
+@media screen and (max-width: 1200px) {
+  .service__items {
+    gap: 10px; }
+  .service__item {
+    padding: 25px; }
+    .service__item-icon {
+      margin-right: 25px; }
+    .service__item-btn {
+      top: 30px;
+      right: 30px; } }
+@media screen and (max-width: 992px) {
+  .service-item {
+    padding: 20px 0 30px; }
+    .service-item p {
+      font-size: 12px;
+      line-height: 18px; }
+
+  .service {
+    padding: 20px 0 25px; }
+    .service__items {
+      grid-template-columns: 1fr; }
+    .service__item {
+      border-width: 3px; }
+      .service__item-btn {
+        display: none; }
+      .service__item-icon {
+        width: 46px; }
+        .service__item-icon svg {
+          width: 100%; }
+      .service__item-title {
+        font-size: 15px;
+        line-height: 19px; }
+      .service__item-desc {
+        font-size: 10px;
+        line-height: 13px;
+        margin-top: 13px; } }
+
+/*# sourceMappingURL=service.css.map */

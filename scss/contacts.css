@@ -1,0 +1,236 @@
+.contacts {
+  padding: 40px 0 45px; }
+  .contacts__inner {
+    display: flex; }
+  .contacts__sidebar {
+    border: 3px solid #f3f3f3;
+    width: 380px;
+    flex-shrink: 0;
+    padding: 30px 45px; }
+    .contacts__sidebar-title {
+      font-size: 12px;
+      font-weight: 500;
+      color: #989898;
+      margin-bottom: 12px; }
+    .contacts__sidebar-btn {
+      width: 245px;
+      height: 51px;
+      margin-top: 20px;
+      font-size: 14px;
+      font-weight: 600; }
+  .contacts__address {
+    display: flex;
+    color: #1d1d1d; }
+    .contacts__address svg {
+      margin-right: 17px;
+      width: 8px;
+      height: 13px; }
+    .contacts__address strong {
+      font-size: 15px;
+      font-weight: 500;
+      display: block; }
+    .contacts__address span {
+      font-size: 12px;
+      line-height: 16px;
+      margin-top: 10px;
+      display: block; }
+  .contacts__google {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    color: #2490b8; }
+    .contacts__google:hover {
+      color: #1f5d91; }
+    .contacts__google span {
+      margin-top: 0; }
+    .contacts__google img {
+      margin-left: 9px; }
+  .contacts__phones {
+    display: flex; }
+    .contacts__phones svg {
+      margin-right: 15px; }
+    .contacts__phones-block {
+      margin-top: 29px; }
+  .contacts__phone {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1d1d1d;
+    display: block;
+    margin-bottom: 11px; }
+    .contacts__phone:hover {
+      color: #efc701; }
+  .contacts__whatsapp {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: #1d1d1d;
+    margin-top: 15px; }
+    .contacts__whatsapp:hover {
+      color: #efc701; }
+      .contacts__whatsapp:hover path {
+        fill: #efc701; }
+    .contacts__whatsapp svg {
+      margin-right: 9px; }
+  .contacts__mail, .contacts__instagram {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    color: #1d1d1d; }
+    .contacts__mail:hover, .contacts__instagram:hover {
+      color: #efc701; }
+      .contacts__mail:hover path, .contacts__instagram:hover path {
+        fill: #efc701; }
+    .contacts__mail svg, .contacts__instagram svg {
+      margin-right: 15px; }
+    .contacts__mail-block, .contacts__instagram-block {
+      margin-top: 29px; }
+  .contacts__instagram {
+    font-size: 16px; }
+    .contacts__instagram svg {
+      margin-right: 14px; }
+    .contacts__instagram-block {
+      margin-top: 25px; }
+  .contacts__content {
+    flex-grow: 1;
+    margin-left: 80px; }
+  .contacts__title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #242424;
+    padding-bottom: 28px;
+    position: relative; }
+    .contacts__title:before {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      width: 93px;
+      height: 2px;
+      background-image: linear-gradient(90deg, #dd4a8b 0%, #279ed0 100%);
+      left: 0;
+      bottom: 0; }
+  .contacts__form {
+    margin-top: 33px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 17px 21px; }
+    .contacts__form-group:nth-child(5) {
+      grid-column: 1/3; }
+    .contacts__form-nav {
+      grid-column: 1/3;
+      margin-top: 10px;
+      display: flex;
+      align-items: center; }
+    .contacts__form-btn {
+      width: 277px;
+      height: 55px;
+      font-size: 16px;
+      font-weight: 600; }
+    .contacts__form-hint {
+      font-size: 10px;
+      line-height: 14px;
+      font-weight: 400;
+      color: #636363;
+      margin-left: 40px; }
+      .contacts__form-hint a {
+        color: #3199cc; }
+    .contacts__form input {
+      height: 47px;
+      width: 100%;
+      background-color: #ffffff;
+      border: 1px solid #d8d8d8;
+      border-radius: 2px;
+      padding: 0 24px; }
+      .contacts__form input::placeholder {
+        color: #9c9c9c; }
+    .contacts__form textarea {
+      height: 157px;
+      width: 100%;
+      background-color: #ffffff;
+      border: 1px solid #d8d8d8;
+      border-radius: 2px;
+      padding: 17px 24px;
+      resize: none; }
+      .contacts__form textarea::placeholder {
+        color: #9c9c9c; }
+
+@media screen and (max-width: 1200px) {
+  .contacts__sidebar {
+    padding: 20px 24px;
+    width: 320px; }
+  .contacts__content {
+    margin-left: 30px; } }
+@media screen and (max-width: 992px) {
+  .contacts {
+    padding: 15px 0 35px; }
+    .contacts__inner {
+      display: block; }
+    .contacts__sidebar {
+      width: 100%; }
+    .contacts__content {
+      margin-left: 0px;
+      margin-top: 25px; } }
+@media screen and (max-width: 768px) {
+  .contacts__sidebar-title {
+    font-size: 10px; }
+  .contacts__sidebar-btn {
+    width: 242px;
+    height: 50px; }
+  .contacts__address strong {
+    font-size: 14px; }
+  .contacts__address span {
+    font-size: 10px;
+    line-height: 14px;
+    margin-top: 10px; }
+  .contacts__google {
+    font-size: 12px !important;
+    margin-top: 12px; }
+    .contacts__google span {
+      margin-top: 0; }
+  .contacts__phones svg {
+    margin-right: 13px; }
+  .contacts__phones-block {
+    margin-top: 25px; }
+  .contacts__phone {
+    font-size: 16px; }
+  .contacts__mail svg {
+    margin-right: 13px; }
+  .contacts__mail-block {
+    margin-top: 21px; }
+  .contacts__instagram {
+    font-size: 14px; }
+    .contacts__instagram-block {
+      margin-top: 21px; }
+  .contacts__title {
+    padding-bottom: 20px;
+    font-size: 20px; }
+    .contacts__title:before {
+      height: 1px; }
+  .contacts__form {
+    margin-top: 20px;
+    display: block; }
+    .contacts__form-group {
+      margin-bottom: 11px; }
+    .contacts__form-nav {
+      display: block;
+      margin-top: 18px; }
+    .contacts__form-btn {
+      width: 239px;
+      height: 45px;
+      font-size: 14px; }
+    .contacts__form-hint {
+      font-size: 8px;
+      line-height: 12px;
+      margin-left: 0;
+      margin-top: 15px; }
+      .contacts__form-hint br {
+        display: none; }
+    .contacts__form input {
+      height: 38px;
+      padding: 0 16px; }
+    .contacts__form textarea {
+      height: 132px;
+      padding: 14px 16px; } }
+
+/*# sourceMappingURL=contacts.css.map */

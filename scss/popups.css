@@ -1,0 +1,351 @@
+.modal-dialog {
+  margin-top: 70px; }
+.modal__close {
+  z-index: 1000;
+  position: absolute;
+  float: unset;
+  top: 20px;
+  right: 20px;
+  opacity: 1; }
+.modal-content {
+  box-shadow: none;
+  border-radius: 5px;
+  padding: 0;
+  background-color: #fff; }
+.modal-body {
+  padding: 0; }
+
+.modal1 .modal-dialog {
+  width: 700px; }
+.modal1-top {
+  padding: 30px 60px;
+  border-bottom: 1px solid #eaeaea; }
+.modal1__title {
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #232323; }
+.modal1__desc {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1e1e1e;
+  margin-top: 17px;
+  display: flex;
+  align-self: start; }
+  .modal1__desc svg {
+    margin-right: 13px; }
+.modal1__form {
+  padding: 35px 60px;
+  display: grid;
+  grid-template-columns: 320px 227px;
+  gap: 20px 34px; }
+  .modal1__form label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #373737;
+    margin-bottom: 15px; }
+  .modal1__form input {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #e0e0e0;
+    border-radius: 1px; }
+  .modal1__form textarea {
+    width: 100%;
+    height: 117px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 1px;
+    resize: none; }
+  .modal1__form-nav {
+    grid-column: 1/3;
+    display: flex;
+    align-items: center; }
+  .modal1__form-btn {
+    width: 194px;
+    height: 50px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-right: 32px;
+    flex-shrink: 0; }
+  .modal1__form-hint {
+    font-size: 11px;
+    line-height: 14px;
+    font-weight: 400;
+    color: #232323; }
+    .modal1__form-hint a {
+      color: #568fbe; }
+
+.modal3 .close path {
+  fill: #fff; }
+.modal3 .modal1__form-group:nth-child(1), .modal3 .modal1__form-group:nth-child(4) {
+  grid-column: 1/3; }
+.modal3-top {
+  background-image: linear-gradient(90deg, #dd4a8b 0%, #279ed0 100%);
+  padding: 15px 60px;
+  display: flex;
+  align-items: center; }
+  .modal3-top__icon {
+    margin: 0 40px;
+    opacity: 0.3;
+    width: 70px;
+    height: 73px; }
+    .modal3-top__icon svg {
+      width: 100%;
+      height: 100%; }
+.modal3__title {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ffffff; }
+.modal3__desc {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #ffffff; }
+
+.modal4 .modal-dialog {
+  width: 570px; }
+.modal4 .modal-body {
+  display: flex; }
+  .modal4 .modal-body__left {
+    background-image: linear-gradient(180deg, #f39800 0%, #f0c501 100%);
+    width: 160px;
+    border-radius: 5px 0px 0px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0; }
+    .modal4 .modal-body__left img {
+      display: none; }
+  .modal4 .modal-body__right {
+    padding: 40px 53px; }
+.modal4__title {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #232323; }
+.modal4__desc {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #000000;
+  margin-top: 20px; }
+.modal4__close {
+  margin-top: 20px;
+  opacity: 0.8;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #353535;
+  border-bottom: 1px dashed #353535; }
+  .modal4__close:hover {
+    opacity: 1;
+    border-color: transparent; }
+
+.modal5 .modal-dialog {
+  width: 500px; }
+.modal5__top {
+  padding: 40px 50px 35px;
+  display: flex;
+  align-items: center; }
+  .modal5__top-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #f6b900; }
+  .modal5__top-desc {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #6e6668; }
+  .modal5__top svg {
+    margin-right: 25px; }
+.modal5__bottom {
+  padding: 25px 50px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f3f3f3;
+  border-radius: 0px 0px 5px 5px; }
+  .modal5__bottom button {
+    width: 194px;
+    height: 44px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .modal5__bottom .btn-white:hover {
+    background-color: #e0e0e0; }
+
+.modal-backdrop.in {
+  background: #4d4d4d;
+  opacity: 0.7; }
+
+@media screen and (max-width: 768px) {
+  .modal-dialog {
+    margin-left: auto;
+    margin-right: auto; }
+  .modal__close {
+    top: 15px;
+    right: 15px;
+    width: 12px;
+    height: 12px; }
+    .modal__close svg {
+      width: 12px;
+      height: 12px; }
+
+  .modal3 .modal-dialog {
+    width: calc(100% - 30px); }
+  .modal3 .modal1__form-group:nth-child(1), .modal3 .modal1__form-group:nth-child(4) {
+    grid-column: 1/1; }
+  .modal3-top {
+    padding: 20px 24px;
+    display: block;
+    position: relative;
+    padding-right: 80px; }
+    .modal3-top__icon {
+      width: 56px;
+      height: 58px;
+      right: 40px;
+      top: 23px;
+      position: absolute;
+      margin: 0; }
+  .modal3__title {
+    font-size: 16px; }
+  .modal3__desc {
+    font-size: 11px;
+    line-height: 16px;
+    margin-top: 13px; }
+
+  .modal1 .modal-dialog {
+    width: calc(100% - 30px); }
+  .modal1-top {
+    padding: 23px 23px 15px; }
+  .modal1__title {
+    font-size: 14px; }
+  .modal1__desc {
+    font-size: 11px;
+    line-height: 16px;
+    margin-top: 11px;
+    align-items: flex-start; }
+    .modal1__desc svg {
+      width: 10px;
+      height: 10px;
+      margin-top: 3px;
+      margin-right: 10px; }
+  .modal1__form {
+    padding: 20px 24px;
+    grid-template-columns: 1fr;
+    gap: 20px; }
+    .modal1__form-nav {
+      grid-column: 1/2;
+      display: block; }
+    .modal1__form-btn {
+      width: 187px;
+      height: 42px;
+      font-size: 11.8px;
+      margin-right: 0; }
+    .modal1__form-hint {
+      font-size: 8px;
+      line-height: 12px;
+      margin-top: 12px; }
+    .modal1__form label {
+      font-size: 13px;
+      margin-bottom: 11px; }
+    .modal1__form input {
+      height: 34px; }
+    .modal1__form textarea {
+      height: 125px; } }
+@media screen and (max-width: 576px) {
+  .modal4 .modal-dialog {
+    width: calc(100% - 30px); }
+  .modal4 .modal-body {
+    position: relative; }
+    .modal4 .modal-body__left {
+      position: absolute;
+      background-image: none;
+      width: 47px;
+      height: 55px;
+      top: 16px;
+      right: 34px; }
+      .modal4 .modal-body__left svg {
+        display: none; }
+      .modal4 .modal-body__left img {
+        display: unset;
+        width: 100%;
+        height: 100%; }
+    .modal4 .modal-body__right {
+      padding: 30px 24px; }
+  .modal4__title {
+    font-size: 18px;
+    line-height: 24px;
+    padding-right: 70px; }
+  .modal4__desc {
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 20px; }
+  .modal4__close {
+    font-size: 11px;
+    margin-top: 17px; }
+
+  .modal5 .modal-dialog {
+    width: calc(100% - 30px); }
+  .modal5__top {
+    padding: 20px 24px 50px;
+    position: relative; }
+    .modal5__top-title {
+      font-size: 16px;
+      line-height: 18px; }
+    .modal5__top-desc {
+      font-size: 12px;
+      position: absolute;
+      left: 24px;
+      bottom: 20px;
+      margin-top: 0; }
+    .modal5__top svg {
+      width: 38px;
+      margin-right: 18px; }
+  .modal5__bottom {
+    padding: 15px 24px; }
+    .modal5__bottom button {
+      height: 33px;
+      padding: 0 17px;
+      flex-grow: 1;
+      font-size: 10px; }
+      .modal5__bottom button:not(:last-child) {
+        margin-right: 6px; }
+      .modal5__bottom button span {
+        display: none; } }
+@media screen and (max-width: 500px) {
+  .modal-dialog {
+    width: calc(100% - 20px); }
+  .modal-content:before, .modal-content:after {
+    height: 43px; }
+  .modal__title {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 18px; }
+  .modal__forgot-title {
+    width: 100%;
+    margin-left: 0; }
+
+  .option {
+    padding-top: 30px;
+    width: calc(100% - 60px); }
+    .option__title {
+      font-size: 18px; }
+    .option__badge {
+      font-size: 10px;
+      margin-top: 7px; }
+    .option__select {
+      margin-top: 20px; }
+      .option__select select {
+        height: 43px;
+        font-size: 14px;
+        padding-left: 15px; }
+    .option__btn {
+      height: 43px;
+      margin-top: 12px;
+      font-size: 12px; } }
+
+/*# sourceMappingURL=popups.css.map */

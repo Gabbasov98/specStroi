@@ -1,0 +1,224 @@
+.about__gallery {
+  display: flex;
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+  margin-top: 30px;
+  padding: 30px 0; }
+  .about__gallery-prev, .about__gallery-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #2f2f2f;
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    z-index: 3; }
+    .about__gallery-prev:hover, .about__gallery-next:hover {
+      opacity: 1; }
+  .about__gallery-prev {
+    left: 30px; }
+    .about__gallery-prev svg {
+      transform: rotate(180deg); }
+  .about__gallery-next {
+    right: 30px; }
+  .about__gallery-disabled {
+    opacity: 0.5;
+    pointer-events: none; }
+  .about__gallery-big {
+    flex-grow: 1;
+    height: 450px;
+    position: relative; }
+    .about__gallery-big-item {
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: all .3s; }
+      .about__gallery-big-item a {
+        display: block;
+        width: 100%;
+        height: 100%; }
+      .about__gallery-big-item img {
+        width: 100%;
+        height: 100%; }
+    .about__gallery-big-item--active {
+      display: block;
+      position: relative;
+      z-index: 2;
+      opacity: 1; }
+  .about__gallery-small {
+    height: 450px;
+    width: 160px;
+    margin-left: 20px;
+    overflow-y: hidden;
+    overflow-y: auto; }
+    .about__gallery-small:hover .mCSB_scrollTools {
+      opacity: 1; }
+    .about__gallery-small-wrap {
+      display: flex;
+      flex-direction: column; }
+    .about__gallery-small-item {
+      opacity: 0.74;
+      cursor: pointer;
+      transition: all .3s;
+      height: 108px; }
+      .about__gallery-small-item:hover {
+        opacity: 1; }
+      .about__gallery-small-item:not(:last-child) {
+        margin-bottom: 7px; }
+      .about__gallery-small-item img {
+        width: 100%;
+        height: 100%; }
+    .about__gallery-small-item--active {
+      opacity: 1;
+      pointer-events: none;
+      order: -1; }
+  .about__gallery .mCSB_inside > .mCSB_container {
+    margin-right: 0; }
+  .about__gallery .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color: #568fbe; }
+  .about__gallery .mCSB_scrollTools {
+    width: 8px;
+    opacity: 0; }
+  .about__gallery .mCSB_scrollTools .mCSB_draggerRail {
+    width: 8px;
+    border-radius: 0;
+    background-color: #ccc; }
+.about__info {
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between; }
+  .about__info-right, .about__info-left {
+    display: flex; }
+  .about__info-link {
+    width: 194px;
+    height: 41px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 8px; }
+  .about__info-phone {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1b1b1b;
+    display: flex;
+    align-items: center; }
+    .about__info-phone:not(:last-child) {
+      margin-bottom: 12px;
+      display: block; }
+  .about__info-whatsapp {
+    font-size: 12px;
+    font-weight: 500;
+    color: #242424;
+    display: flex;
+    align-items: center;
+    margin-left: 15px; }
+    .about__info-whatsapp svg {
+      margin-right: 9px; }
+  .about__info-instagram {
+    margin-left: 40px; }
+    .about__info-instagram a {
+      font-size: 16px;
+      font-weight: 500;
+      color: #212121;
+      display: flex;
+      align-items: center; }
+      .about__info-instagram a svg {
+        margin-right: 10px; }
+  .about__info-phones-title, .about__info-instagram-title {
+    font-size: 13px;
+    font-weight: 500;
+    color: #686868;
+    margin-bottom: 14px;
+    display: block; }
+
+.about-bottom {
+  padding-bottom: 70px; }
+  .about-bottom .info__bottom-title {
+    width: 100%;
+    margin-left: 0; }
+
+@media screen and (max-width: 1200px) {
+  .about__gallery-big {
+    height: 380px; }
+  .about__gallery-small {
+    height: 380px;
+    margin-left: 10px; }
+  .about__info {
+    display: block; }
+    .about__info-right {
+      margin-top: 20px; }
+    .about__info-link {
+      margin-left: 0;
+      margin-right: 8px; } }
+@media screen and (max-width: 992px) {
+  .about__gallery {
+    margin-top: 20px;
+    padding: 25px 0 20px;
+    display: block; }
+    .about__gallery-big {
+      height: unset;
+      width: calc(100% + 30px);
+      margin-left: -15px; }
+    .about__gallery-small {
+      margin-top: 15px;
+      height: unset;
+      width: 100%;
+      margin-left: 0;
+      overflow-y: unset; }
+      .about__gallery-small-wrap {
+        flex-direction: unset;
+        flex-wrap: wrap; }
+      .about__gallery-small-item {
+        width: calc((100% / 3) - (10px / 3));
+        margin-right: 5px;
+        height: unset;
+        margin-bottom: 4px; }
+        .about__gallery-small-item:nth-child(3n) {
+          margin-right: 0; }
+        .about__gallery-small-item img {
+          height: auto; }
+      .about__gallery-small-item--active {
+        order: unset; }
+  .about__info {
+    margin-top: 23px; }
+    .about__info-phones-title, .about__info-instagram-title {
+      font-size: 10px; }
+    .about__info-instagram {
+      margin-left: 35px; }
+      .about__info-instagram a {
+        font-size: 14px; }
+    .about__info-phone {
+      font-size: 16px;
+      display: block; }
+    .about__info-whatsapp {
+      margin-left: 0;
+      margin-top: 12px;
+      font-size: 10px; }
+      .about__info-whatsapp svg {
+        width: 11px;
+        height: auto;
+        margin-right: 5px; }
+    .about__info-right {
+      flex-wrap: wrap; }
+    .about__info-link {
+      width: 174px;
+      height: 37px;
+      margin-bottom: 6px;
+      font-size: 14px; }
+  .about-bottom {
+    padding-bottom: 25px; } }
+@media screen and (max-width: 768px) {
+  .about__gallery-prev, .about__gallery-next {
+    width: 33px;
+    height: 33px; }
+    .about__gallery-prev svg, .about__gallery-next svg {
+      width: 6px;
+      height: auto; }
+  .about__gallery-prev {
+    left: 15px; }
+  .about__gallery-next {
+    right: 15px; } }
+
+/*# sourceMappingURL=about.css.map */

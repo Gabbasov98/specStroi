@@ -1,0 +1,102 @@
+.search {
+    padding: 30px 0 40px;
+    &__title {
+        font-size: 34px;
+        font-weight: 600;
+        color: #131313;
+    }
+    .catalog-cart__nav {
+        margin-top: 30px;
+        &-left {
+            width: 100%;
+            justify-content: space-between;
+        }
+        &-num {
+            font-size: 16px;
+            font-weight: 500;
+        }
+        &-sort {
+            width: 380px;
+        }
+    }
+    .catalog-cart__top-item:nth-child(2),
+    .catalog-cart__item-col:nth-child(2) {
+        width: 175px;
+    }
+    &__all {
+        width: 176px;
+        height: 41px;
+        border-radius: 20.5px;
+        font-size: 14px;
+        font-weight: 500;
+        margin: 35px auto 0;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .search {
+        padding: 20px 0 35px;
+        .catalog-cart__nav {
+            margin-top: 16px;
+            &-left {
+                display: block;
+            }
+            &-num {
+                font-size: 14px;
+                line-height: 20px;
+            }
+            &-sort {
+                margin-left: 0;
+                width: 100%;
+                margin-top: 15px;
+            }
+        }
+        .catalog-cart__top-item:nth-child(2),
+        .catalog-cart__item-col:nth-child(2) {
+            width: 155px;
+        }
+        &__title {
+            font-size: 20px;
+        }
+        &__all {
+            margin-top: 28px;
+            width: 142px;
+            height: 33px;
+            font-size: 12px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .search {
+        .catalog-cart__nav-num {
+            flex-wrap: wrap;
+            span {
+                width: 100%;
+            }
+            strong {
+                margin-left: 0;
+                margin-top: 5px;
+            }
+        }
+        .catalog-cart__nav-sort {
+            margin-top: 5px;
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .search {
+        .catalog-cart__nav {
+            &-num {
+                align-items: flex-start;
+                strong {
+                    margin-top: 1px;
+                }
+            }
+            &-sort {
+                margin-top: 10px;
+            }
+        }
+    }
+}

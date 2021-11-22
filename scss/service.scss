@@ -1,0 +1,114 @@
+.service-item {
+    padding: 30px 0 50px;
+    p {
+        line-height: 22px;
+    }
+}
+
+.service {
+    padding: 40px 0 65px;
+    &__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    &__item {
+        border: 5px solid #f3f3f3;
+        padding: 45px 50px;
+        display: flex;
+        transition: all .3s;
+        position: relative;
+        &:hover {
+            border-color: #009cd5;
+            .service__item-title {
+                color: #009cd5;
+            }
+        }
+        &-btn {
+            width: 36px;
+            height: 36px;
+            background-color: #009cd5;
+            position: absolute;
+            top: 45px;
+            right: 45px;
+        }
+        &-icon {
+            width: 85px;
+            margin-right: 35px;
+            flex-shrink: 0;
+        }
+        &-title {
+            font-size: 22px;
+            line-height: 28px;
+            font-weight: 600;
+            color: #1e1e1e;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            padding-right: 40px;
+        }
+        &-desc {
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 400;
+            color: #1e1e1e;
+            margin-top: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .service {
+        &__items {
+            gap: 10px;
+        }
+        &__item {
+            padding: 25px;
+            &-icon {
+                margin-right: 25px;
+            }
+            &-btn {
+                top: 30px;
+                right: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .service-item {
+        padding: 20px 0 30px;
+        p {
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+    .service {
+        padding: 20px 0 25px;
+        &__items {
+            grid-template-columns: 1fr;
+        }
+        &__item {
+            border-width: 3px;
+            &-btn {
+                display: none;
+            }
+            &-icon {
+                width: 46px;
+                svg {
+                    width: 100%;
+                }
+            }
+            &-title {
+                font-size: 15px;
+                line-height: 19px;
+            }
+            &-desc {
+                font-size: 10px;
+                line-height: 13px;
+                margin-top: 13px;
+            }
+        }
+    }
+}
